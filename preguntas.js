@@ -1,0 +1,257 @@
+export const preguntas = [
+  {
+    pregunta: "¿Cuál de estos es un color primario?",
+    respuestas: ["rojo", "verde", "violeta", "naranja"],
+    correcta: 1,
+  },
+  {
+    pregunta: "¿Cuál es el planeta más cercano al Sol?",
+    respuestas: ["Venus", "Mercurio", "Marte", "Júpiter"],
+    correcta: 2,
+  },
+  {
+    pregunta: "¿Cuánto es 5 + 3?",
+    respuestas: ["6", "8", "10", "9"],
+    correcta: 2,
+  },
+  {
+    pregunta: "¿Cuál es la capital de Francia?",
+    respuestas: ["Roma", "París", "Madrid", "Berlín"],
+    correcta: 2,
+  },
+  {
+    pregunta: "¿Qué animal es un mamífero?",
+    respuestas: ["Tiburón", "Ballena", "Pez globo", "Calamar"],
+    correcta: 2,
+  },
+  {
+    pregunta: "¿Cuál es el metal más ligero?",
+    respuestas: ["Plomo", "Oro", "Litio", "Hierro"],
+    correcta: 3,
+  },
+  {
+    pregunta: "¿En qué continente está Egipto?",
+    respuestas: ["Asia", "África", "Europa", "América"],
+    correcta: 2,
+  },
+  {
+    pregunta: "¿Cuánto es 9 × 9?",
+    respuestas: ["81", "72", "99", "90"],
+    correcta: 1,
+  },
+  {
+    pregunta: "¿Cuál es el océano más grande?",
+    respuestas: ["Atlántico", "Índico", "Pacífico", "Ártico"],
+    correcta: 3,
+  },
+  {
+    pregunta: "¿Quién pintó la Mona Lisa?",
+    respuestas: ["Picasso", "Leonardo da Vinci", "Van Gogh", "Rembrandt"],
+    correcta: 2,
+  },
+  {
+    pregunta: "¿Qué gas respiramos principalmente?",
+    respuestas: ["Oxígeno", "Nitrógeno", "Dióxido de carbono", "Helio"],
+    correcta: 2,
+  },
+  {
+    pregunta: "¿Cuál es la capital de Japón?",
+    respuestas: ["Tokio", "Seúl", "Pekín", "Osaka"],
+    correcta: 1,
+  },
+  {
+    pregunta: "¿Qué forma tiene la Tierra?",
+    respuestas: ["Plana", "Esférica", "Cúbica", "Pirámide"],
+    correcta: 2,
+  },
+  {
+    pregunta: "¿Cuál es el río más largo del mundo?",
+    respuestas: ["Amazonas", "Nilo", "Yangtsé", "Misisipi"],
+    correcta: 1,
+  },
+  {
+    pregunta: "¿Cuántos días tiene una semana?",
+    respuestas: ["5", "6", "7", "8"],
+    correcta: 3,
+  },
+  {
+    pregunta: "¿Qué animal pone huevos?",
+    respuestas: ["Perro", "Gallina", "Vaca", "Caballo"],
+    correcta: 2,
+  },
+  {
+    pregunta: "¿En qué país está la Torre Eiffel?",
+    respuestas: ["Italia", "España", "Francia", "Alemania"],
+    correcta: 3,
+  },
+  {
+    pregunta: "¿Cuál es el resultado de 12 ÷ 4?",
+    respuestas: ["2", "3", "4", "6"],
+    correcta: 2,
+  },
+  {
+    pregunta: "¿Qué planeta es conocido como el planeta rojo?",
+    respuestas: ["Mercurio", "Venus", "Marte", "Júpiter"],
+    correcta: 3,
+  },
+  {
+    pregunta: "¿Cuál es el idioma oficial de Brasil?",
+    respuestas: ["Portugués", "Español", "Inglés", "Francés"],
+    correcta: 1,
+  },
+  {
+    pregunta: "¿Cuál es el continente más frío?",
+    respuestas: ["África", "Asia", "Antártida", "Europa"],
+    correcta: 3,
+  },
+  {
+    pregunta: "¿Cuántos lados tiene un cuadrado?",
+    respuestas: ["3", "4", "5", "6"],
+    correcta: 2,
+  },
+  {
+    pregunta: "¿Cuál es el símbolo químico del agua?",
+    respuestas: ["CO2", "O2", "H2O", "NaCl"],
+    correcta: 3,
+  },
+  {
+    pregunta: "¿Cuál es la capital de Argentina?",
+    respuestas: ["Buenos Aires", "Montevideo", "Santiago", "Lima"],
+    correcta: 1,
+  },
+  {
+    pregunta: "¿Qué planeta tiene anillos?",
+    respuestas: ["Marte", "Júpiter", "Saturno", "Venus"],
+    correcta: 3,
+  },
+  {
+    pregunta: "¿Cuántas patas tiene una araña?",
+    respuestas: ["6", "8", "10", "12"],
+    correcta: 2,
+  },
+  {
+    pregunta: "¿Cuál es el resultado de 7 × 6?",
+    respuestas: ["42", "36", "48", "56"],
+    correcta: 1,
+  },
+  {
+    pregunta: "¿Qué gas necesitan las plantas para hacer fotosíntesis?",
+    respuestas: ["Oxígeno", "Dióxido de carbono", "Nitrógeno", "Hidrógeno"],
+    correcta: 2,
+  },
+  {
+    pregunta: "¿En qué continente está México?",
+    respuestas: ["América", "Europa", "Asia", "África"],
+    correcta: 1,
+  },
+  {
+    pregunta: "¿Qué color se obtiene al mezclar azul y amarillo?",
+    respuestas: ["Verde", "Naranja", "Violeta", "Marrón"],
+    correcta: 1,
+  },
+  {
+    pregunta: "¿Cuál es la capital de Italia?",
+    respuestas: ["Roma", "París", "Madrid", "Lisboa"],
+    correcta: 1,
+  },
+  {
+    pregunta: "¿Cuál es el animal más rápido del mundo?",
+    respuestas: ["Guepardo", "León", "Águila", "Caballo"],
+    correcta: 1,
+  },
+  {
+    pregunta: "¿Qué número romano representa 10?",
+    respuestas: ["V", "X", "L", "C"],
+    correcta: 2,
+  },
+  {
+    pregunta: "¿Cuál es el hueso más largo del cuerpo humano?",
+    respuestas: ["Fémur", "Húmero", "Radio", "Tibia"],
+    correcta: 1,
+  },
+  {
+    pregunta: "¿Qué planeta es el más grande?",
+    respuestas: ["Júpiter", "Saturno", "Neptuno", "Urano"],
+    correcta: 1,
+  },
+  {
+    pregunta: "¿Quién escribió Don Quijote de la Mancha?",
+    respuestas: ["Cervantes", "Shakespeare", "Borges", "Neruda"],
+    correcta: 1,
+  },
+  {
+    pregunta: "¿Qué animal es conocido como el rey de la selva?",
+    respuestas: ["Tigre", "Elefante", "León", "Jaguar"],
+    correcta: 3,
+  },
+  {
+    pregunta: "¿Cuál es el continente más poblado?",
+    respuestas: ["Europa", "América", "Asia", "África"],
+    correcta: 3,
+  },
+  {
+    pregunta: "¿Qué instrumento mide la temperatura?",
+    respuestas: ["Barómetro", "Termómetro", "Anemómetro", "Sismógrafo"],
+    correcta: 2,
+  },
+  {
+    pregunta: "¿Cuántas horas tiene un día?",
+    respuestas: ["12", "24", "48", "60"],
+    correcta: 2,
+  },
+  {
+    pregunta: "¿Qué país inventó el sushi?",
+    respuestas: ["China", "Japón", "Corea", "Tailandia"],
+    correcta: 2,
+  },
+  {
+    pregunta: "¿Qué animal produce lana?",
+    respuestas: ["Vaca", "Oveja", "Caballo", "Cabra"],
+    correcta: 2,
+  },
+  {
+    pregunta: "¿Cuál es el quinto planeta del sistema solar?",
+    respuestas: ["Marte", "Saturno", "Júpiter", "Venus"],
+    correcta: 3,
+  },
+  {
+    pregunta: "¿Cuántas notas tiene la escala musical?",
+    respuestas: ["5", "7", "8", "6"],
+    correcta: 2,
+  },
+  {
+    pregunta: "¿Cuál es el idioma más hablado del mundo?",
+    respuestas: ["Inglés", "Español", "Chino mandarín", "Hindú"],
+    correcta: 3,
+  },
+  {
+    pregunta: "¿Qué continente tiene forma de boomerang?",
+    respuestas: ["Oceanía", "África", "Asia", "Europa"],
+    correcta: 1,
+  },
+  {
+    pregunta: "¿Cuánto es 100 ÷ 4?",
+    respuestas: ["20", "25", "30", "40"],
+    correcta: 2,
+  },
+  {
+    pregunta: "¿Cuál es el océano que separa América y Europa?",
+    respuestas: ["Índico", "Pacífico", "Atlántico", "Ártico"],
+    correcta: 3,
+  },
+  {
+    pregunta: "¿Qué animal puede volar?",
+    respuestas: ["Perro", "Murciélago", "Conejo", "Cabra"],
+    correcta: 2,
+  },
+  {
+    pregunta: "¿Cuál es el resultado de 15 - 7?",
+    respuestas: ["6", "7", "8", "9"],
+    correcta: 3,
+  },
+  {
+    pregunta: "¿Qué planeta es conocido como el lucero del alba?",
+    respuestas: ["Venus", "Marte", "Mercurio", "Saturno"],
+    correcta: 1,
+  },
+];
