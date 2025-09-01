@@ -1,5 +1,5 @@
 export const preguntas = [
-  { pregunta: "¿Cuál de estos es un color primario?", respuestas: ["rojo", "verde", "violeta", "naranja"], correcta: 0 },
+  { pregunta: "¿Cuál de estos es un color primario??", respuestas: ["rojo", "verde", "violeta", "naranja"], correcta: 0 },
   { pregunta: "¿Cuál es el planeta más cercano al Sol?", respuestas: ["Venus", "Mercurio", "Marte", "Júpiter"], correcta: 1 },
   { pregunta: "¿Cuánto es 5 + 3?", respuestas: ["6", "8", "10", "9"], correcta: 1 },
   { pregunta: "¿Cuál es la capital de Francia?", respuestas: ["Roma", "París", "Madrid", "Berlín"], correcta: 1 },
