@@ -3,23 +3,37 @@ import chalk from "chalk";
 import promptSync from "prompt-sync";
 
 //hay que mejorarlo, y quiero que haya mas funciones no una sola
-
-const prompt = promptSync();
-function quiz() {
-  let contadorDePuntaje = 0;
-  let usuario;
+/*
+-indices 1234
+- cuando el usuario ingrese algo que no sea 1234, tire un mensaje sin restar ni sumar puntos 
+-cambiar e 100 por el fin (con to.string)
+*/
+function reglas() {
   console.log(
-    chalk.blueBright(`El Quiz, es un multiple choise, para marcar sus respuestas debera ingresar un numero del 0 al 3
-        (si desea finalizar el quizz agregue el numero 100)`)
+    chalk.blueBright(`El Quiz es un multiple choice
+                      para marcar sus respuestas debera ingresar un numero del 0 al 3
+                          (si desea finalizar el quiz ingrese "fin")`)
   );
+}
+function finalizarJuego(usuario, contadorDeError, contadorDePuntaje) {
+  if (usuario === 100) {
+    return `Enhorabuena ha finalizado su Quiz, su total de puntos es ${contadorDePuntaje}
+          La cantidad de respuestas incorrectas: ${contadorDeError}.`;
+  } else {
+    return `Enhorra buena ha terminado su Quiz, su total de puntos es ${contadorDePuntaje}, 
+       La cantidad de respuestas incorrectas: ${contadorDeError}`;
+  }
+}
+function estructuraDelJuego(contadorDeError, contadorDePuntaje) {
+  let usuario;
   for (let i = 0; i < preguntas.length; i++) {
     console.log(chalk.blackBright(preguntas[i].pregunta));
     console.log(
       chalk.magenta(`las posibles respuestas:
-            0.${preguntas[i].respuestas[0]}.
-            1.${preguntas[i].respuestas[1]}. 
-            2.${preguntas[i].respuestas[2]}.
-            3.${preguntas[i].respuestas[3]}`)
+            1.${preguntas[i].respuestas[0]}.
+            2.${preguntas[i].respuestas[1]}. 
+            3.${preguntas[i].respuestas[2]}.
+            4.${preguntas[i].respuestas[3]}`)
     );
     usuario = Number(
       prompt(
@@ -28,14 +42,8 @@ function quiz() {
         )
       )
     );
-    if (usuario === 100) {
-      return console.log(
-        chalk.greenBright.italic(
-          `Enhorra buena ha finalizado su Quiz, su total de puntos es ${contadorDePuntaje}`
-        )
-      );
-    }
-    if (usuario === preguntas[i].correcta) {
+
+    if (usuario - 1 === preguntas[i].correcta) {
       contadorDePuntaje += 5;
       console.log(
         chalk.green(
@@ -52,12 +60,18 @@ function quiz() {
           }`
         )
       );
+      contadorDeError++;
     }
+    finalizarJuego(usuario, contadorDeError, contadorDePuntaje);
   }
-  console.log(
-    chalk.greenBright(
-      `Enhorra buena ha terminado su Quiz, su total de puntos es ${contadorDePuntaje}`
-    )
-  );
+}
+
+const prompt = promptSync();
+function quiz() {
+  let contadorDePuntaje = 0;
+  let contadorDeError = 0;
+
+  reglas();
+  estructuraDelJuego(contadorDeError, contadorDePuntaje);
 }
 quiz();
