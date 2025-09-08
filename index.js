@@ -15,15 +15,12 @@ function reglas() {
                           (si desea finalizar el quiz ingrese "fin")`)
   );
 }
-function finalizarJuego(usuario, contadorDeError, contadorDePuntaje) {
-  if (usuario === 100) {
-    return `Enhorabuena ha finalizado su Quiz, su total de puntos es ${contadorDePuntaje}
-          La cantidad de respuestas incorrectas: ${contadorDeError}.`;
-  } else {
-    return `Enhorra buena ha terminado su Quiz, su total de puntos es ${contadorDePuntaje}, 
-       La cantidad de respuestas incorrectas: ${contadorDeError}`;
-  }
+
+function finalizarJuego(contadorDeError, contadorDePuntaje) {
+  console.log(`Enhorabuena ha finalizado su Quiz, su total de puntos es ${contadorDePuntaje}
+          La cantidad de respuestas incorrectas: ${contadorDeError}.`);
 }
+
 function estructuraDelJuego(contadorDeError, contadorDePuntaje) {
   let usuario;
   for (let i = 0; i < preguntas.length; i++) {
@@ -42,7 +39,22 @@ function estructuraDelJuego(contadorDeError, contadorDePuntaje) {
         )
       )
     );
-
+    if (usuario === 100) {
+      return finalizarJuego(contadorDeError, contadorDePuntaje);
+    }
+    if (
+      usuario !== 1 &&
+      usuario !== 2 &&
+      usuario !== 3 &&
+      usuario !== 4 &&
+      usuario !== 100
+    ) {
+      console.log(
+        `Ingreso un valor incorrecto.
+        recuerde debe ingresar 1,2,3,4 o si desea finalizar 100
+        vuelva a intentarlo`
+      );
+    }
     if (usuario - 1 === preguntas[i].correcta) {
       contadorDePuntaje += 5;
       console.log(
@@ -62,8 +74,9 @@ function estructuraDelJuego(contadorDeError, contadorDePuntaje) {
       );
       contadorDeError++;
     }
-    finalizarJuego(usuario, contadorDeError, contadorDePuntaje);
   }
+  console.log(`Enhorra buena ha terminado su Quiz, su total de puntos es ${contadorDePuntaje} 
+                La cantidad de respuestas incorrectas: ${contadorDeError}`);
 }
 
 const prompt = promptSync();
