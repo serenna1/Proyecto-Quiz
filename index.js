@@ -3,11 +3,7 @@ import chalk from "chalk";
 import promptSync from "prompt-sync";
 
 //hay que mejorarlo, y quiero que haya mas funciones no una sola
-/*
--indices 1234
-- cuando el usuario ingrese algo que no sea 1234, tire un mensaje sin restar ni sumar puntos 
--cambiar e 100 por el fin (con to.string)
-*/
+
 function reglas() {
   console.log(
     chalk.blueBright(`El Quiz es un multiple choice
@@ -20,7 +16,7 @@ function finalizarJuego(contadorDeError, contadorDePuntaje) {
   console.log(`Enhorabuena ha finalizado su Quiz, su total de puntos es ${contadorDePuntaje}
           La cantidad de respuestas incorrectas: ${contadorDeError}.`);
 }
-
+//intentar poner mas funciones dentro de estructuradeljuego
 function estructuraDelJuego(contadorDeError, contadorDePuntaje) {
   let usuario;
   for (let i = 0; i < preguntas.length; i++) {
@@ -40,6 +36,7 @@ function estructuraDelJuego(contadorDeError, contadorDePuntaje) {
       )
     );
     if (usuario === 100) {
+      // arreglar el 100 por el fin
       return finalizarJuego(contadorDeError, contadorDePuntaje);
     }
     if (
@@ -49,6 +46,7 @@ function estructuraDelJuego(contadorDeError, contadorDePuntaje) {
       usuario !== 4 &&
       usuario !== 100
     ) {
+      // buscar una forma para qu esea mas eficiente
       console.log(
         `Ingreso un valor incorrecto.
         recuerde debe ingresar 1,2,3,4 o si desea finalizar 100
@@ -80,10 +78,9 @@ function estructuraDelJuego(contadorDeError, contadorDePuntaje) {
 }
 
 const prompt = promptSync();
+let contadorDePuntaje = 0;
+let contadorDeError = 0;
 function quiz() {
-  let contadorDePuntaje = 0;
-  let contadorDeError = 0;
-
   reglas();
   estructuraDelJuego(contadorDeError, contadorDePuntaje);
 }
